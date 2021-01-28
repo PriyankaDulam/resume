@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		div>section{
+			color:red ;
+		}
+		div span{
+			color:blue;
+		}
+		span+p{
+			color: green;
+		}
+		section ~ p{
+			color:yellow;
+		}
+
+	</style>
+</head>
+<body><!--Relational Selectors
+	1.descendent combiner(>)
+	2.child combiner( )(space)
+	3.adjacent sibling selectors(+)
+	4.general sibling selectors(~)
+  -->
+	<div>
+		<section>
+			Section
+			</section>
+			<p>Paragraph 1</p>
+			<span>Paragraph 2</span>
+			<p>Paragraph 3</p>
+		
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<style>
+			h1{
+				color:red;
+			}
+			#p1{
+				font-size:15px;
+				font-family: bold;
+			}
+			.parent{
+				display:flex;
+				flex-direction: row;
+				justify-content: center ;
+				flex-wrap: wrap;
+			}
+			.child1{
+				border:3px solid blue;
+				border-radius: 10px;
+				font-size:20px;
+				padding:5px;
+				margin:5px;
+				width:20%;
+				}
+			.child2{
+				border:3px solid blue;
+				border-radius: 10px;
+				font-size:15px;
+				padding:5px;
+				margin:5px;
+				width:50%;
+
+			}
+			.child3{
+				border:2px solid blue;
+				border-radius: 10px;
+				font-size:15px;
+				padding:5px;
+				margin:5px;
+				width:90%;
+				height:60%;
+
+		}
+		@media only screen and (min-width:320px) and (max-width:480px){
+					.child1{
+						width:30%;
+					}
+					.child2{
+						width:100%;
+					}
+					.child3{
+						width:80%;
+						height:45%;
+					}
+				}
+		
+		</style>
+	</head>
+	<body>
+		<h1>Profile information:</h1>
+		<section class="parent">
+			<article class="child1">
+				<center><img src="user.svg" alt="user" width=50px height=50px />
+				<p>Priyanka</p>
+				<p>priyanka@gmail.com</p></center>
+			</article>
+			<article class="child2">
+				<p id="p1">Summary:</p>
+				<article class="child3">
+				<p>Hey!.....This is priyanka.</p>
+			</article>
+			</article>
+		</section>
+	</body>
+</html>
